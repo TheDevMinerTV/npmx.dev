@@ -145,10 +145,13 @@ const closeModal = () => modalRef.value?.close?.()
           </div>
         </div>
       </div>
-      <small class="text-xs text-fg-muted text-center sm:text-start m-0">
-        <span class="sm:hidden">{{ $t('non_affiliation_disclaimer') }}</span>
-        <span class="hidden sm:inline">{{ $t('trademark_disclaimer') }}</span>
-      </small>
+      <div class="flex items-center justify-center sm:justify-between gap-2 m-0">
+        <small class="text-xs text-fg-muted text-center sm:text-start m-0">
+          <span class="sm:hidden">{{ $t('non_affiliation_disclaimer') }}</span>
+          <span class="hidden sm:inline">{{ $t('trademark_disclaimer') }}</span>
+        </small>
+        <img src="/secured-by-delve-88x31.gif" alt="Secured by Delve" width="88" height="31" class="shrink-0" style="image-rendering: pixelated">
+      </div>
     </div>
   </footer>
 </template>
